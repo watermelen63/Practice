@@ -1,0 +1,37 @@
+內容
+輸入任意數字，並將其數字全部倒轉
+
+輸入說明
+輸入一行包含一個整數，且不超過2³¹
+
+輸出說明
+輸出翻轉過後的數字
+
+範例輸入 #1
+12345
+
+範例輸出 #1
+54321
+
+範例輸入 #2
+5050
+
+範例輸出 #2
+505
+
+
+我的版本:
+n = input()
+temp = []#暫存
+num = ''
+ans = 0
+for i in range (len(n)):
+    temp.append(n[i:i+1])
+    for j in reversed (len(temp)):
+        num = temp[len(temp)-j]
+
+GPT版本:
+n = input()  # 例如輸入 012340
+reversed_n = n[::-1]  # 字串反轉
+result = reversed_n.lstrip('0')  # 去除開頭的0
+print(result)
