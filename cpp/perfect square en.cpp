@@ -19,7 +19,7 @@ int main(){
             cin >> a >> b;
             //test's data
             if (a <= 0 || b <= 0 || a > b || a > 1000 || b > 1000){
-                cout << "error ,please Re-enter it" << endl;
+                cout << "error, please Re-enter it" << endl;
                 print();
                 i --;
                 continue;
