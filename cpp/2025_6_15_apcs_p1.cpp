@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    int k,x1,x2,y1,y2,temp;
+    int k, x1, x2, y1, y2, temp;
     cout << "請輸入生命值" << endl;
     cin >> k;
     cout << "請輸入陷阱間隔以及陷阱攻擊力" << endl;
