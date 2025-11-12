@@ -1,7 +1,5 @@
 def searchChar(a, s):
-    mid = len(a) // 2
-    left = [:a]
-    right = [a:]
+    mid, left, right = len(a) // 2, 0, len(a)
     
 
 ans, times = input(), int(input())
