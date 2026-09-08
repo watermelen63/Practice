@@ -3,16 +3,20 @@
         {
             "type": "cppbuild",
             "label": "C/C++: g++.exe 建置使用中檔案",
-            "command": "C:\\msys64\\mingw64\\bin\\g++.exe",
+            "command": "C:/msys64/mingw64/bin/g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${workspaceFolder}/cpp/${fileBasenameNoExtension}.exe"
             ],
             "options": {
-                "cwd": "${fileDirname}"
+                "cwd": "${workspaceFolder}/cpp",
+                "env": {
+                    "TEMP": "C:/msys64/tmp",
+                    "TMP": "C:/msys64/tmp"
+                }
             },
             "problemMatcher": [
                 "$gcc"

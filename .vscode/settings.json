@@ -1,5 +1,10 @@
 {
     "files.exclude": {
-        "**/*.exe":true,
+        "**/*.exe": true
     },
+    "python-envs.defaultEnvManager": "ms-python.python:system",
+    "terminal.integrated.env.windows": {
+        "TEMP": "C:\\msys64\\tmp",
+        "TMP": "C:\\msys64\\tmp"
+    }
 }
