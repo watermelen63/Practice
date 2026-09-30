@@ -1,38 +1,22 @@
 {
-    "version": "2.0.0",
     "tasks": [
-        {
-            "label": "C/C++: g++.exe build active file",
-            "type": "shell",
-            "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
-            "args": [
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
-            ],
-            "options": {
-                "cwd": "${workspaceFolder}"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": "build",
-            "detail": "Generated task for building C++ file using g++"
-        },
         {
             "type": "cppbuild",
             "label": "C/C++: g++.exe 建置使用中檔案",
-            "command": "C:/mingw64/bin/g++.exe",
+            "command": "C:/msys64/mingw64/bin/g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${workspaceFolder}/cpp/${fileBasenameNoExtension}.exe"
             ],
             "options": {
-                "cwd": "C:/mingw64/bin"
+                "cwd": "${workspaceFolder}/cpp",
+                "env": {
+                    "TEMP": "C:/msys64/tmp",
+                    "TMP": "C:/msys64/tmp"
+                }
             },
             "problemMatcher": [
                 "$gcc"
@@ -43,5 +27,6 @@
             },
             "detail": "偵錯工具產生的工作。"
         }
-    ]
+    ],
+    "version": "2.0.0"
 }

@@ -1,9 +1,9 @@
-h,y,j=input("要開啟計算機嗎?(yes or no)\n"),0,[] #是否要開啟計算機，j=輸入的兩個數字，y=output
+h, y, j = input("要開啟計算機嗎?(yes or no)\n"), 0, [] #是否要開啟計算機，j=輸入的兩個數字，y=output
 # h='yes'開啟計算機
 if h == 'yes':
     print("---計算機開啟---")
     while h != 'no':
-        h=input("請輸入運算符號+,-,*,/(如要關閉計算機請輸入end)\n")#輸入運算符號
+        h = input("請輸入運算符號+,-,*,/(如要關閉計算機請輸入end)\n")#輸入運算符號
         if h == 'end':
             break
         elif h not in ['+', '-', '*', '/']:
@@ -14,7 +14,7 @@ if h == 'yes':
         if h != 'off':
             temp = input()
             if temp != 'end':
-                j=list(map(int,temp.split()))#輸入兩個數字
+                j = list(map(int,temp.split()))#輸入兩個數字
                 if h == '+':
                     y = sum(j)
                     print(y)
